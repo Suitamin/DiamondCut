@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <div class="wrapper">
+    <nav>
+        <div class="left">
+          <img src="asset/foto logo.png" alt="Test" href="index.html">
+        </div>
+    
+        <div class="right">
+          <a href="home.html" class="home">HOME</a>
+          <a href="cars.html" class="cars">CARS</a>
+          <a href="showroom.html" class="showroom">SHOWROOM</a>
+          <a href="about.html" class="about-us">ABOUT US</a>
+          <a href="login.html" class="login">LOGIN</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+
+              <div class="input-box">
+                <span class="details">Username</span>
+                <input id="name" name="name" type="text" placeholder="Enter your username" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Country</span>
+                <select name="country" id="country" class="country-apa">
+                    <option value="" hidden>Select a country</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="US">United States</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input id="email" name="email" type="text" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input id="phoneNumber" name="phoneNumber" type="number" placeholder="Enter your number" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input id="password" name="password" type="password" placeholder="Enter your password" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input id="confpass" name="password" type="password" placeholder="Confirm your password" required>
+              </div>
+
+            </div>
+
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                  <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+              </div>
+            </div>
+            <a>
+                <div>
+                    <button class="button" type="button" onclick="validateData()" style="text-decoration: none;">Register</button>
+                </div>
+            </a>
+          </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</div>   
+
+</body>
+</html>
